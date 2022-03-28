@@ -1,0 +1,9 @@
+div{
+    width: 500px;
+    height: auto;
+    color: blanchedalmond;
+    background-color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:20px;
+    border: 6px solid orange;
+}

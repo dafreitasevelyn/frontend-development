@@ -1,0 +1,12 @@
+#box{
+    width: 500px;
+    height: auto;
+}
+.text{
+    color: darkmagenta;
+    font-family: initial;
+}
+#box > p > span{
+color: black;
+
+}
