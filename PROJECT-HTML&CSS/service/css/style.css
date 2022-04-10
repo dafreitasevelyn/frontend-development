@@ -161,9 +161,3 @@ list-style: none;
 .content img{
   max-width: 100%; 
 }
-/*locales*/
-.product{
-    width: 200px;
-    height: auto;
-    float: left;
-}
