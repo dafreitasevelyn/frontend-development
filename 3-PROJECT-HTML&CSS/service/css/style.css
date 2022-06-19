@@ -78,6 +78,7 @@ list-style: none;
     height: auto;
 }
 
+
 /*content-holder*/
 .content-holder{
     background-color: dimgray;
@@ -161,9 +162,10 @@ list-style: none;
 .content img{
   max-width: 100%; 
 }
-/*locales*/
-.product{
-    width: 200px;
-    height: auto;
-    float: left;
-}
+
+/*contact*/
+.banner iframe{
+    width: 1000px;
+    height: 665.44px;
+    }
+    

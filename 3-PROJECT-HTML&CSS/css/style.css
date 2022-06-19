@@ -78,6 +78,13 @@ list-style: none;
     height: auto;
 }
 
+.banner iframe{
+    width: 1000px;
+    height: 665.44px;
+    }
+
+
+
 /*content-holder*/
 .content-holder{
     background-color: dimgray;
@@ -160,4 +167,29 @@ list-style: none;
 /*page*/
 .content img{
   max-width: 100%; 
+}
+/*locales*/
+.product{
+    width: 200px;
+    height: auto;
+    float: left;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+.produc-caption p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: blue;
+}
+.produc-caption a{
+    display: block;
+    background-color: lightslategray;
+    color: white;
+    text-align: center;
+    border: 1px black;
+    text-decoration: none;
+}
+.produc-caption a:hover{
+    background-color: darkslategray ;
 }
