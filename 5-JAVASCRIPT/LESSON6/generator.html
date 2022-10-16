@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        // function* movie(){
+        //     console.log(1)
+        //     yield "lights";
+        //     console.log(2)
+        //     yield "camera";
+        //     console.log(3)
+        //     yield "action";
+        //     console.log(4)
+        // } 
+
+        // var action = movie();
+        // var prueba = movie()
+        // console.log(action.next().value)
+        // console.log(action.next().value)
+        // console.log(prueba.next().value)
+
+       
+       
+        // mas complejo
+
+        function* eachItem(arr)
+        {
+            for(var i=0;i<arr.length;i++)
+            {
+                yield arr[i]
+            }
+        }
+       
+        var myNumbers = eachItem([1,2,3,4,5,6,7]);
+        
+        console.log (myNumbers.next().value)
+        console.log (myNumbers.next().value)
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    </section>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+    var [first,,third] = ["caracas","madrid","londres"];
+    console.log(first, third)
+
+   
+   
+    // mas complejo
+
+    var sandwich = {
+        title:"Cheese Sandwich",
+        price:40,
+        description:"cheese sandwich whit mermelade",
+        ingredients:["bread","cheese","mermelade"]
+    };
+    console.log (sandwich.title);
+    console.log (sandwich.price);
+
+    // que es lo mismo que
+    var {title, price} = {
+        title:"Cheese Sandwich",
+        price:40,
+        description:"cheese sandwich whit mermelade",
+        ingredients:["bread","cheese","mermelade"]
+    };
+    console.log (title);
+    console.log (price);
+
+  
+  
+    // otro ejemplo aun mas complejo
+    var vacations ={
+        destination:"londres",
+        travelers:2,
+        activity:"turism",
+        cost:172
+    }
+    function vacationMarketing({destination,activity}) {
+        return `lets go to ${destination} for ${activity}`
+    }
+
+    console.log(vacationMarketing(vacations));
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    </section>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+    var person = {
+        first: "Evelyn",
+        actions: ["bike", "hike", "surf"],
+        printAction: function (){
+            var _this = this;
+            this.actions.forEach(function (action){
+                var str = _this.first + " likes to " + action;
+                console.log(str);
+            });
+
+        }
+    }
+    person.printAction();
+
+//    igual que 
+
+   var person = {
+        first: "Evelyn",
+        actions: ["bike", "hike", "surf"],
+        printAction: function (){
+            this.actions.forEach(function (action){
+                var str = this.first + " likes to " + action;
+                console.log(str);
+            }.bind ( this));
+
+        }
+    }
+    person.printAction();
+
+    // con arrow
+
+    var person = {
+        first: "Evelyn",
+        actions: ["bike", "hike", "surf"],
+        printAction(){
+            this.actions.forEach (action => {
+                var str = this.first + " likes to " + action;
+                console.log(str);
+            });
+
+        }
+    }
+    person.printAction();
+
+
+
+    </script>
+
+</body>
+
+</html>

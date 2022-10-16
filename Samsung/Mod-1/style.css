@@ -1,0 +1,33 @@
+body{
+    background-color: cyan;
+}
+
+h1{
+    color: red;
+}
+
+h2{
+    color:blue;
+}
+td{
+    border-color: black;
+    border-width: 5px;
+}
+.first{
+    background-color: blue;
+    color: white;
+}
+.second{
+    background-color: red;
+    color: white;
+}
+table{
+    background-color: blue;
+}
+.image{
+    border:0;
+}
+h3{
+    text-decoration: none line-through;
+    line-height:300%;
+}

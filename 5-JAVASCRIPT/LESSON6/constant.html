@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <header>Click on any box</header>
+    <section id="cosa">
+
+    </section>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        
+        const birthYear=1994;
+        var  currentYear=2022;
+
+        var result= currentYear - birthYear;
+        console.log(result);
+
+        function checkFreeze(deg){
+            const freezingTemp=32;
+            if(freezingTemp<=deg){
+                return deg + "above freezing";
+            }else{
+                return deg + "below freezing";
+            }
+        }
+        console.log(checkFreeze(50));
+        console.log(checkFreeze(20));
+
+    </script>
+    
+</body>
+</html>

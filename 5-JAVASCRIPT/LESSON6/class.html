@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <header>Click on any box</header>
+    <section id="cosa">
+
+    </section>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        
+   class Mobile {
+    constructor(storage, ram){
+        this.storage = storage;
+        this.ram = ram
+    }
+    phoneDetails(){
+        console.log (`this phone has ${this.storage} storage and ${this.ram} ram`)
+    }
+   }
+
+   var myNewPhone = new Mobile ("64gb","8gb")
+   myNewPhone.phoneDetails();
+
+    </script>
+    
+</body>
+</html>
