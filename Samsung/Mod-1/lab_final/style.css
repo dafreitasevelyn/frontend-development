@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 60px;}
+h2{ font-size: 50px;}
+h3{font-size: 35px;}
+p{font-size: 17px;}
+ul{list-style: none;}
+li{ font-size: 20px;}
+
+button{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px 30px;
+    border: 2px solid rgb(0,0,0,0.5);
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgb(37, 36, 36);
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+
+button:hover{
+    background-color: rgb(69, 19, 116);
+}
+
+header{
+    background-color:rgb(220, 221, 223);
+
+}
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+
+header .logo{
+    color: blueviolet;
+    font-size: 25px;
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    padding: 1.5ch;
+    font-weight: bold;
+    float: right
+}
+
+.container a:hover{
+    color: blueviolet;
+}
+
+/* primera seccion */
+#hero{
+    background: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5), rgba(0,0,0,0.5)
+        )
+    ,url("media/hero.jpg");
+    display: flex;
+    align-items: center;
+    padding: 70px;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    text-align: center;
+}
+
+/* segunda seccion */
+#somos-bejob{
+ 
+}
+
+#somos-bejob .container{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 5px;  
+}
+
+span{
+    color: blueviolet;
+}
+
+/* tercera seccion */
+#nuestros-programas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+#nuestros-programas h2{
+    padding-top: 150px;
+    padding-bottom: 15px;
+    
+}
+#nuestros-programas .cuadros{
+    padding-left: 10px;
+    padding-bottom: 100px;
+    margin: 20px;
+    border-radius: 4px;
+}
+#nuestros-programas .Front-end{
+    background: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5), rgba(0,0,0,0.5)
+        )
+    ,url(media/front-end-cropped.jpg);
+    border-radius: 4px;
+}
+#nuestros-programas .Full-Stack{
+    background: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5), rgba(0,0,0,0.5)
+        )
+    ,url(media/full-stack-cropped.jpg);
+    border-radius: 4px;
+}
+#nuestros-programas .Python{
+    background: linear-gradient(
+        0deg, 
+        rgba(0,0,0,0.5), rgba(0,0,0,0.5)
+        )
+    ,url(media/python.jpg);
+    border-radius: 4px;
+}
+/* cuarta seccion */
+#caracteristicas{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 250px;
+    
+}
+#caracteristicas li{
+    margin: 15px 15px;
+    font-weight: bold;
+}
+
+/* quinta seccion */
+#final{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 70px;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    text-align: center;
+}
+
+/* footer */
+.copy{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    font-weight: 100;
+}
+
+@media (min-width:720px){
+    header .container{
+        flex-direction: row;
+    }
+    header nav {
+        flex-direction: row;
+        padding-right: 20px;
+    }
+}

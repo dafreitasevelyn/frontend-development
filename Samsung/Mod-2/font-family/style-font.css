@@ -1,0 +1,19 @@
+p{
+    font-size: larger;
+    text-emphasis-style: circle;
+}
+
+h1{
+    font-size: larger;
+    text-emphasis-style: open dot;
+    text-emphasis-position:under;
+}
+h2{
+    text-emphasis: sesame;
+}
+
+h3{
+    text-emphasis-style: open dot;
+    border-radius: 0cm;
+    padd
+}

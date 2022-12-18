@@ -1,0 +1,20 @@
+*{
+    
+}
+
+fieldset{
+    width: 350px;
+    padding: 30px;
+    margin: auto;
+}
+
+legend{
+    padding-bottom: 10px;
+    padding-top:0%;
+    text-align: center;
+}
+
+.form{
+    
+}
+

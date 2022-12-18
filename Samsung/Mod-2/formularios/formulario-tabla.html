@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <fieldset>
+            <form method="post">
+                <legend><b>Formulario</b></legend>
+                    <table>
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" pattern="[A-Za-z0-9.#$]{1,4}"></td>
+                        </tr>
+                        <tr>
+                            <td>Mail</td>
+                            <td><input type="email" nombre="correo" value="correo@gmail.com"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                <input type="radio" name="r_gender" value="Male">Male <br>
+                                <input type="radio" name="r_gender" value="Female">Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>New Member</td>
+                            <td>
+                                <input type="checkbox">Yes <br>
+                                <input type="checkbox">No
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth</td>
+                            <td>
+                                <input type="date" name="r_rate">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Country</td>
+                            <td>
+                                <select name="r_country">
+                                    <option value="spain">Spain</option>
+                                    <option value="france">France</option>
+                                    <option value="portugal">Portugal</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Datalist</td>
+                            <td>
+                                <input type="text" list="idiomas">
+                                <datalist id="idiomas">
+                                    <option value="spain">Spanish</option>
+                                    <option value="france">Franch</option>
+                                    <option value="portugal">Portuguese</option>
+                                </datalist>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Message</td>
+                            <td>
+                                <input type="text" name="r_massage" cols="2px" rows="2px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="reset"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit"></td>
+                        </tr>
+                        <tr>
+                        <td><button type="button" onclick="alert ('Ha pulsado')"><img src="logo (1).png"></button></td>
+                            
+                        </tr>
+                    
+                    </table>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

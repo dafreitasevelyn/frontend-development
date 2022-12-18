@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="formulario">
+        <fieldset>
+            <legend>Datos personales</legend>
+                <label for="Name">Nombre:
+                    <input type="text" pattern="[AZaz]{3,30}"></td>
+                <br>
+                </label>
+                <label for="Apellido">Apellido:
+                    <input type="text"></td>
+                <br>
+                </label>
+                <label for="Direccion">Direccion:
+                    <input type="text"></td>
+                <br>
+                </label>
+                <label for="Codigo Postal">Codigo Postal:
+                    <input type="text" pattern="[0-9]{5}"></td>
+                <br>
+                </label>
+                <label for="Localidad">Localidad:
+                    <input type="text"></td>
+                </label>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Tipo de Contratacion</legend>
+                <label for="radio">
+                    <input type="radio" name="r_contratacion" value="nuevacontratacion" checked>Nueva Contratación
+                    <input type="radio" name="r_contratacion" value="portabilidad">Portabilidad
+                    <input type="radio" name="r_contratacion" value="cambiodecontrato"> Cambio de contrato
+                </label>
+                <br>
+                <br>
+                <label for="compañía">Elija la compañia actual:
+                    <select name="r_compañias">
+                        <option value="movistar">Movistar</option>
+                        <option value="orange">Orange</option>
+                        <option value="o2">O2</option>
+                    </select>
+                </label>
+                <label for="compañía">En caso de portabilidad, elija la nueva compañía:
+                    <select name="r_compañias">
+                        <option value="movistar">Movistar</option>
+                        <option value="orange">Orange</option>
+                        <option value="o2">O2</option>
+                    </select>
+                </label>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Datos Bancarios</legend>
+            <label for="pais">País:
+                <input type="text" value="ES" readonly="reandoly" ></td>
+            <br>
+            </label>
+            <label for="Iban">Control IBAN:
+                <input type="text"  placeholder="XX" pattern="[0-9]{2}"></td>
+            <br>
+            </label>
+            <label for="entidad">Entidad:
+                <input type="text" placeholder="XXXX" pattern="[0-9]{4}"></td>
+            <br>
+            </label>
+            <label for="Sucursal">Sucursal:
+                <input type="text" placeholder="XXXX" pattern="[0-9]{4}"></td>
+            <br>
+            </label>
+                <label for="Dc">DC:
+                    <input type="text" placeholder="XX" pattern="[0-9]{2}"></td>
+                <br>
+                </label>
+                <label for="cuenta">Cuenta:
+                    <input type="text" placeholder="XXXXXXXXXX" pattern="[0-9]{10}"></td>
+                <br>
+                </label>
+        </fieldset>
+                <br>
+                <label for="SUBMIT">
+                    <input type="submit" value="Enviar Datos">
+                </label>
+                <label for="reset">
+                    <input type="reset" value="Borrar Datos"></td>
+                </label>
+    </form>
+    
+</body>
+</html>
