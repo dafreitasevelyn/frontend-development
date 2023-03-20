@@ -1,16 +1,42 @@
-#contenedor{
+.contenedor{
     width: 700px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    
+}
+
+#cabecera{
+    width: 700px;
+    
 }
 
 #menu{
     width: 150px;
     float: left;
+    
+}
+
+#menu ul{
+    list-style-type: none;
+  
+}
+
+#menu a{
+    text-decoration: none;
+
 }
 
 #contenido{
     width: 550px;
     float: left;
 }
+
 
 #pie{
     clear: both;

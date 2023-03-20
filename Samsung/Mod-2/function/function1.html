@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero=138686868653;
+        var esprimo=false;
+
+        esprimo= esnumeroprimo (numero);
+            if(esprimo==true)
+            {
+                document.write("El valor "+numero+" es primo"+"</br>");
+            }
+            else
+            {
+               
+                document.write("El valor "+numero+" no es primo"+"</br>");
+            }
+        
+        function esnumeroprimo(num)
+        {
+            var resultado=true
+            
+            for(a=2;a<num;a++)
+            {
+                if(num%a==0)
+                {
+                    resultado=false;
+                    break;
+                }
+            }
+            return resultado;
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+ <script>
+    class Pila {
+        constructor() 
+        {
+            this.items = [];
+        }
+        
+        // crearPilaVacia () 
+        // {
+        //     this.items = [];
+        //     return this.items;
+        // }
+        longitud(){
+            return this.items.length
+        }
+
+        apilar (elem) 
+        {
+            this.items.push(elem);
+            return this.items;
+        }
+        desapilar () {
+        return this.items.pop();
+        } 
+
+        imprimirPila() {
+        document.write(this.items);
+        } 
+       
+    }
+
+    const pilaEjemplo = new Pila();
+    const pila2Ejemplo = new Pila()
+    var numero = 2
+    pilaEjemplo.apilar("Decathlon")
+    pilaEjemplo.apilar("ElPeriodico")
+    pilaEjemplo.apilar("Marca")
+    pilaEjemplo.apilar("Booking")
+    pilaEjemplo.apilar("Amazon")
+
+    while(pilaEjemplo.longitud() > 0)
+    {
+        document.write(pilaEjemplo.desapilar())
+    }
+
+    pilaEjemplo.imprimirPila()
+    // document.write(pilaEjemplo.apilar("Decathlon, ElPeriodico, Marca, Booking, Amazon"));
+    // document.write("<br />");
+    // document.write(pilaEjemplo.apilar("ElPeriodico"));
+    // document.write("<br />");
+    // document.write(pilaEjemplo.apilar("Marca"));
+    // document.write("<br />");
+    // document.write(pilaEjemplo.apilar("Booking"));
+    // document.write("<br />");
+    // document.write(pilaEjemplo.apilar("Amazon"));
+    // document.write("<br />");
+    // document.write(pilaEjemplo.cima1()+","+pilaEjemplo.cima2()+","+pilaEjemplo.cima3()+","+pilaEjemplo.cima4()+","+pilaEjemplo.cima5()); 
+        
+ </script>
+ </body>
+</html>

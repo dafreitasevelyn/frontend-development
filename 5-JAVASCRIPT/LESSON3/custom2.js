@@ -5,7 +5,7 @@ function runMe()
 { 
     if (u_name.value.length<3)
     {
-        message.innerHTML='Faltan Caracteres';
+        alert='Faltan Caracteres';
         message.style.color='orange';
         u_name.style.backgroundColor='black';
         u_name.style.color='white'

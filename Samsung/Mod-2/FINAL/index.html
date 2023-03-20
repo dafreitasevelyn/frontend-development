@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <fieldset>
+        <form method="post" name="myForm" onsubmit=validateForm()>
+            <legend>Create Account</legend>
+                <div>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="u_name" oninput=validateName()  required>
+                    <i id="check-name"></i>
+                    <span name="prueba" id="u_name_msj"></span>
+                    
+                </div>
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="email" name="u_mail" oninput=validateEmail() required>
+                    <i id="check-mail"></i>
+                    <span id="u_mail_msj" name="prueba"></span>
+                </div>
+                <div>
+                    <label for="Clave">Clave</label>
+                    <input type="password" name= "u_pass"  oninput=validatePasswordLength() required>
+                    <i id="check-pass"></i>
+                    <span id="u_pass_msj" name="prueba"></span>
+                </div>
+                <div>
+                    <label for="Confirmar clave">Confirme su Clave</label>
+                    <input type="password" name="u_confirmpass" oninput=validatePassword() required>
+                    <i id="check-confirm"></i>
+                    <span id="u_confirmpass_msj" name="prueba"></span>
+                </div>
+                    <label for="submit"></label>
+                    <input type="submit" name="u_submit" value="Enviar">
+        </form>
+    </fieldset>
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+ <meta charset="utf-8" />
+ </head>
+ <body>
+<script>
+        class Cola {
+            constructor() {
+            this.items = [];
+            }
+            crearColaVacia () {
+            this.items = [];
+            return this.items;
+            }
+            encolar (elem) {
+            this.items.push(elem);
+            return this.items;
+            }
+            
+            desencolar () {
+            this.items.shift();
+            return this.items;
+            }
+            frente() {
+            return this.items[0];
+            }
+            esColaVacia() {
+            return this.items.length === 0;
+            }
+            imprimirCola() {
+            document.write(this.items);
+            }
+        }
+    const colaEjemplo = new Cola();
+    document.write(colaEjemplo.esColaVacia()); // true
+    document.write("<br />");
+    document.write(colaEjemplo.encolar("Madrid")); // Inserta "Madrid" -> ["Madrid"]
+    document.write("<br />");
+    document.write(colaEjemplo.encolar("Barcelona"));// Inserta "Barcelona" ["Madrid", "Barcelona"]
+    document.write("<br />");
+    document.write(colaEjemplo.encolar("Valencia"));// Inserta "Valencia" ["Madrid", "Barcelona","Valencia"]
+    document.write("<br />");
+    colaEjemplo.imprimirCola();// ["Madrid", "Barcelona", "Valencia"]
+    document.write("<br />");
+    document.write(colaEjemplo.frente()); // "Madrid"
+    document.write("<br />");
+    document.write(colaEjemplo.desencolar());// Elimina "Madrid" ["Barcelona", "Valencia"]
+    document.write("<br />");
+    document.write(colaEjemplo.frente()); // "Barcelona"
+    document.write("<br />");
+    document.write(colaEjemplo.esColaVacia()); // false
+    document.write("<br />");
+</script>
+ </body>
+</html>

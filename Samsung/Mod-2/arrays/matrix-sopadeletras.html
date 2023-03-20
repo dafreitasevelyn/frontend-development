@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var matriz1=[]
+
+
+        for (var i=0;i<20;i++)
+        {
+            let fila=new Array(20);
+            fila.fill(0);
+            matriz1.push(fila)
+        }
+        var numA=0
+
+        matriz1 [0][0]="A";
+        matriz1 [0][1]="R";
+        matriz1 [0][2]="M";
+        matriz1 [0][3]="A";
+
+        matriz1 [8][11]="C";
+        matriz1 [9][11]="A";
+        matriz1 [10][11]="R";
+        matriz1 [11][11]="A";
+
+        matriz1 [11][3]="A";
+        matriz1 [11][2]="Z";
+        matriz1 [11][1]="U";
+        matriz1 [11][0]="L";
+
+
+
+        for(var i=0;i<20;i++)
+        {
+            for (var j=0;j<20;j++)
+            {
+                document.write(matriz1[i][j]+" ");
+            }
+            document.write("</br>");
+        }
+
+        for(var i=0;i<20;i++)
+        {
+            for (var j=0;j<20;j++)
+            {
+                if(matriz1[i][j]=="A")
+                {
+                    numA=numA+1
+                } 
+            }
+            
+        } document.write(numA);
+        
+        
+    
+    </script>
+</body>
+</html>

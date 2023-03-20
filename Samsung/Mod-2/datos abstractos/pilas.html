@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Pila 
+        {
+            constructor() 
+            {
+            this.items = [];
+            }
+            crearPilaVacia () 
+            {
+            this.items = [];
+            return this.items;
+            }
+            apilar (elem) 
+            {
+            this.items.push(elem);
+            return this.items;
+            }
+    
+            desapilar () 
+            {
+            this.items.pop();
+            return this.items;
+            }
+            cima() 
+            {
+            return this.items[this.items.length - 1];
+            }
+            esPilaVacia() 
+            {
+            return this.items.length === 0;
+            }
+            imprimirPila() 
+            {
+            document.write(this.items);
+            }
+        }
+        const pilaEjemplo = new Pila();
+            document.write(pilaEjemplo.esPilaVacia()); // true
+            document.write("<br />");
+            document.write(pilaEjemplo.apilar("Madrid"));
+            // Inserta "Madrid" -> ["Madrid"]
+            document.write("<br />");
+            document.write(pilaEjemplo.apilar("Barcelona"));
+            // Inserta "Barcelona" ["Madrid", "Barcelona"]
+            document.write("<br />");
+            document.write(pilaEjemplo.apilar("Valencia"));
+            // Inserta "Valencia" ["Madrid", "Barcelona","Valencia"]
+            document.write("<br />");
+            pilaEjemplo.imprimirPila();
+            // ["Madrid", "Barcelona", "Valencia"]
+            document.write("<br />");
+            document.write(pilaEjemplo.cima()); // "Valencia"
+            document.write("<br />");
+            document.write(pilaEjemplo.desapilar());
+            // Elimina "Valencia" ["Madrid", "Barcelona"]
+            document.write("<br />");
+            document.write(pilaEjemplo.cima()); // "Barcelona"
+            document.write("<br />");
+            document.write(pilaEjemplo.esPilaVacia()); // false
+            document.write("<br />");
+    </script>
+ </body>
+</html>

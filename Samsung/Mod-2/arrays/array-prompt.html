@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numeros=[12,16,23,56,38];
+        var indice= 0;
+        var encontrado=false;
+        var valor=prompt(`¿Numero a buscar?`);
+        while(indice<numeros.length && encontrado==false)
+            {if(numeros[indice]==valor)
+                {
+                    document.write("El número "+valor+" esta en la posición "+indice+"</br>");
+                    encontrado=true;
+                }
+                else
+                {
+                    indice++;
+                }
+            }
+        if(encontrado==false)
+        {
+            document.write("No se encuentra el número "+valor+"</br>");
+        }
+
+ 
+    </script>
+</body>
+</html>

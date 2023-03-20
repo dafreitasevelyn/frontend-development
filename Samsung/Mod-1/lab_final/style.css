@@ -67,7 +67,9 @@ header a{
     text-decoration: none;
     padding: 1.5ch;
     font-weight: bold;
-    float: right
+    position: relative;
+    left: 300px;
+
 }
 
 .container a:hover{
@@ -92,16 +94,18 @@ header a{
 }
 
 /* segunda seccion */
-#somos-bejob{
- 
+.img-container{
+    float: left;
+    padding-bottom:100px;
 }
 
 #somos-bejob .container{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 100px 5px;  
+    padding-top: 100px;
 }
+
 
 span{
     color: blueviolet;
@@ -112,6 +116,7 @@ span{
     background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
+    clear: both;
 }
 #nuestros-programas h2{
     padding-top: 150px;

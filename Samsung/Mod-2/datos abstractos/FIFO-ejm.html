@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+ <meta charset="utf-8" />
+ </head>
+ <body>
+<script>
+        class Cola {
+            constructor() {
+            this.items = [];
+            }
+            encolar (elem) {
+            this.items.push(elem);
+            return this.items;
+            }
+            imprimirCola() {
+            document.write(this.items);
+            }
+        }
+    const colaEjemplo = new Cola();
+    colaEjemplo.encolar("Paco")
+    colaEjemplo.encolar("Carmen")
+    colaEjemplo.encolar("Analía")
+    colaEjemplo.encolar("Fernando")
+    colaEjemplo.encolar("Clara")
+    colaEjemplo.imprimirCola();
+    
+</script>
+ </body>
+</html>

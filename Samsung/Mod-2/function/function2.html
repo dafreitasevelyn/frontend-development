@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        imprimircienprimerosprimos();
+
+        function imprimircienprimerosprimos()
+        {
+            var inicio=2;
+            var numero=0;
+            esprimo= false;
+
+            while(numero<=100)
+            {
+                esprimo=esnumeroprimo(inicio)
+                if(esprimo==true)
+                {
+                    document.write(inicio+"-");
+                    numero++;
+                }
+                inicio++;
+            }
+            
+        }
+
+        function esnumeroprimo(num)
+        {
+            var resultado=true;
+            for(a=2;a<num;a++)
+            {
+                if(num%a==0)
+                {
+                    resultado=false
+                }
+            }
+            return resultado
+        }
+
+    </script>
+    
+</body>
+</html>
